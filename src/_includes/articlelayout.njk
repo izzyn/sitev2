@@ -1,0 +1,13 @@
+---
+title: Untitled 
+header: Untitled
+date: Last Modified
+layout: "base.njk"
+---
+    <div class="center">
+    <h1>{{ title }} </h1>
+    <p>{{ page.date | PostDate}}</p>
+    <a href="/">back</a>
+    <hr>
+    {{ content | safe }}
+    </div>

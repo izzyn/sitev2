@@ -1,0 +1,142 @@
+html, body {
+    font-family: 'Fira Code';
+    background-color: #2a2028;    
+}
+
+button{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	outline: inherit;
+    position: relative;
+    display: inline-block;
+}
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+a, .btn-link {
+    color: #e430e1;
+}
+a:hover{
+    color: rgb(228, 138, 213);
+}
+p, li{
+    color: white;
+}
+span{
+    color:white;
+}
+.parent{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.home-links{
+    display: grid;
+    gap: 1px;
+    grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
+}
+.break{
+    size: 1rem;
+    margin: 0rem;
+}
+.test {
+  height: 160px;
+  width: 170px;
+  -webkit-clip-path: url(#shape);
+  clip-path: url(#shape);
+}
+.gradient-container{
+    display: grid;
+}
+.button-text{
+    text-align: center;
+    color: #e430e1;
+}
+.button-text:hover{
+    color: violet;
+    text-decoration: underline;
+}
+.card-header-text{
+    position: relative;
+    color: violet;
+    font-weight: bold;
+}
+.main-header{
+    margin: auto;
+    margin-top: 10%;
+    width: 50%;
+    padding: 20px;
+}
+.fit-image-animated{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    transition: transform 0.0s; 
+}
+.fit-image-animated:hover{
+    transform: rotate(360deg);  
+    transition: transform 1s ease;          
+}
+@keyframes rotate360 {
+    to { transform: rotate(360deg); }           
+}
+.gradient-text{
+  background-image: linear-gradient(to right, violet, pink);
+  background-clip: text;
+  color: transparent;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  } 
+hr{
+    border-top: 8px solid violet;
+    border-radius: 5px;
+}
+.filter-pink{
+    filter: invert(88%) sepia(53%) saturate(2634%) hue-rotate(277deg) brightness(98%) contrast(96%);
+}
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+.content {
+    padding-top: 1.1rem;
+}
+
+h1 {
+  color: #EE82EE;
+}
+h1:focus {
+    outline: none;
+}
+
+.valid.modified:not([type=checkbox]) {
+    outline: 1px solid #26b050;
+}
+
+.invalid {
+    outline: 1px solid #e50000;
+}
+
+.validation-message {
+    color: #e50000;
+}
+.card-background{
+    height: 10%;
+}
+.card-container{
+    position: relative;
+}
