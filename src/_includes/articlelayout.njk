@@ -5,9 +5,13 @@ date: Last Modified
 layout: "base.njk"
 ---
     <div class="center">
+    <link rel="stylesheet" href="/blog.css">
     <h1>{{ title }} </h1>
-    <p>{{ page.date | PostDate}}</p>
+    <span>{{ page.date | PostDate}} <br>
     <a href="/">back</a>
+    </span>
     <hr>
+    <div class="blog-content">
     {{ content | safe }}
+    </div>
     </div>

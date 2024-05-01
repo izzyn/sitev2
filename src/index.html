@@ -2,8 +2,28 @@
 layout: "layout.njk"
 ---
 
-{% for post in collections.post reversed %}
-<h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
-<p>{{ post.data.header }}</p>        
 
+</div>
+<div class="main-header">
+    <div class="parent">
+    <img src="/favicon.png" class="image-animated">
+    <div>
+        <h1 class="gradient-text", style="font-weight: bold">Hi! I'm Izzy</h1>
+        <p style="font-size: 20px"> ...or alternatively Spizzy on some places.</p>
+    </div>
+    </div>
+    <hr>
+    <p>Amateur video game developer with a particular focus/interest in networking, server architecture and system design.</p>
+
+    <br>
+    <br>
+
+</div>
+{% for post in collections.post reversed %}
+<div class="blog-card">
+<span><a style="font-size: 28px; font-weight: bold;" href="{{ post.url }}">{{ post.data.title }} </a><br>
+{{post.page.date | PostDate }} <hr class="blog-separator">
+{{ post.data.header }}
+</span>
+</div>
 {% endfor %}

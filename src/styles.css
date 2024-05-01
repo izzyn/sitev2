@@ -15,9 +15,8 @@ button{
 }
 .center {
   margin: auto;
-  width: 50%;
-  padding: 10px;
-}
+  width: 80%;
+  padding: 10px; }
 
 a, .btn-link {
     color: #e430e1;
@@ -40,6 +39,24 @@ span{
     gap: 1px;
     grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
 }
+
+blockquote {
+    margin-left: 13px;
+    padding-left: 8px;
+    border-left: 4px solid #EE82EE;
+    border-spacing: 5px;
+    font-size: 20px;
+}
+
+.blog-card{
+    margin-top: 10px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px; 
+    border-color: #EE82EE;
+}
+
 .break{
     size: 1rem;
     margin: 0rem;
@@ -50,6 +67,7 @@ span{
   -webkit-clip-path: url(#shape);
   clip-path: url(#shape);
 }
+
 .gradient-container{
     display: grid;
 }
@@ -70,6 +88,7 @@ span{
     margin: auto;
     margin-top: 10%;
     width: 50%;
+    max-width: 50em;
     padding: 20px;
 }
 .fit-image-animated{
@@ -78,10 +97,18 @@ span{
     object-fit: contain;
     transition: transform 0.0s; 
 }
-.fit-image-animated:hover{
+
+.image-animated{
+    object-fit: contain;
+    transition: transform 0.0s; 
+}
+
+.fit-image-animated:hover, .image-animated:hover{
     transform: rotate(360deg);  
     transition: transform 1s ease;          
 }
+
+
 @keyframes rotate360 {
     to { transform: rotate(360deg); }           
 }
@@ -101,8 +128,13 @@ span{
     margin-right: auto;
     width: 50%;
   } 
+
 hr{
-    border-top: 8px solid violet;
+    border-top: 5px solid violet;
+    border-radius: 5px;
+}
+.blog-separator{
+    border-top: 1px solid violet;
     border-radius: 5px;
 }
 .filter-pink{
