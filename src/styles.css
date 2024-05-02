@@ -45,7 +45,7 @@ button{
         max-width: 80%;
         min-width: none;
         padding: 20px;
-        display: inherit;
+        display: contents;
     }
 }
 

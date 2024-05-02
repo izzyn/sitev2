@@ -1,7 +1,6 @@
 const {DateTime} = require("luxon")
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const markdownIt = require("markdown-it");
-
 module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("./src/styles.css");
@@ -20,7 +19,6 @@ module.exports = function(eleventyConfig) {
   md.use(mathjax3);
 
   eleventyConfig.setLibrary("md", markdownIt(options).use(mathjax3).use(footnotes));
-
   eleventyConfig.addFilter("PostDate", (dateobj) => {return DateTime.fromJSDate(dateobj).toLocaleString(DateTime.DATE_MED)})
   return {
     dir: {
