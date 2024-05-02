@@ -41,8 +41,9 @@ button{
     .main-header{
         margin: auto;
         margin-top: 10%;
-        max-width: 30%;
+        max-width: 50%;
         padding: 20px;
+        display: contents;
     }
 }
 
