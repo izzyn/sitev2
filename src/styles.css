@@ -28,6 +28,7 @@ button{
     max-width: 30%;
     min-width: 40em;
     padding: 20px;
+    display: contents;
 }
 
 @media handheld, only screen and (max-width: 1020px) 
