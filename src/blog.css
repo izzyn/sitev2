@@ -15,5 +15,20 @@ img {
 }
 
 .MathJax{
-  color: white;
+  color: black;
+  filter: invert(100%) sepia(6%) saturate(0%) hue-rotate(33deg) brightness(108%) contrast(105%);;
+}
+
+@media handheld, only screen and (max-width: 1440px) 
+{
+  .blog-content {
+    margin-top: 5px;
+    padding: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px; 
+    border-color: #EE82EE;
+  
+  }
+
 }
