@@ -14,14 +14,6 @@ img {
 
 }
 
-.MathJax{
-  color: black;
-  filter: invert(100%) sepia(6%) saturate(0%) hue-rotate(33deg) brightness(108%) contrast(105%);;
-}
-
-mjx-container{
-  color:white;
-}
 
 @media handheld, only screen and (max-width: 1440px) 
 {
@@ -32,7 +24,22 @@ mjx-container{
     border-width: 1px;
     border-radius: 4px; 
     border-color: #EE82EE;
+    min-width: 90%;
   
+  }
+  img {
+    display: block;
+    width: 80%;
+    margin: auto;
   }
 
 }
+.MathJax{
+  color: black;
+  filter: invert(100%) sepia(6%) saturate(0%) hue-rotate(33deg) brightness(108%) contrast(105%);;
+}
+
+mjx-container{
+  color:white;
+}
+

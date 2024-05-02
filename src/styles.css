@@ -30,18 +30,19 @@ button{
     padding: 20px;
 }
 
-@media handheld, only screen and (max-width: 1440px) 
+@media handheld, only screen and (max-width: 1020px) 
 {
     .center {
         margin: auto;
-        max-width: 90%;
+        max-width: 100%;
         padding: 10px; 
       
     }
     .main-header{
         margin: auto;
         margin-top: 10%;
-        max-width: 50%;
+        max-width: 80%;
+        min-width: none;
         padding: 20px;
         display: contents;
     }
