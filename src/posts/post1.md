@@ -12,6 +12,16 @@ This blog post is for testing out markdown syntax
 
 > Hello
 
+I am testing $2+2$
+
+$$\sum_1^2 a_1$$
+
+Imagine you're me^[stop crying]
+
+$$\begin{bmatrix}
+1 & 2 & 3\\
+a & b & c
+\end{bmatrix}$$
 
 ```cpp
 int* wherearewepointing = malloc(test)

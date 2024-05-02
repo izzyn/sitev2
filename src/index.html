@@ -19,11 +19,15 @@ layout: "layout.njk"
     <br>
 
 </div>
+
+<div class="center">
+<h1>Posts</h1>
 {% for post in collections.post reversed %}
 <div class="blog-card">
-<span><a style="font-size: 28px; font-weight: bold;" href="{{ post.url }}">{{ post.data.title }} </a><br>
-{{post.page.date | PostDate }} <hr class="blog-separator">
-{{ post.data.header }}
-</span>
+    <span><a style="font-size: 28px; font-weight: bold;" href="{{ post.url }}">{{ post.data.title }} </a><br>
+    {{post.page.date | PostDate }} <hr class="blog-separator">
+    {{ post.data.header }}
+    </span>
 </div>
 {% endfor %}
+</div>
