@@ -1,8 +1,37 @@
 html, body {
     font-family: 'Fira Code';
-    background-color: #2a2028;    
+    background-color: #2a2028;
+    height: 100%;
 }
 
+
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+.filter{
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        
+        background-image: repeating-linear-gradient(0deg, rgb(0 0 0 / 25% ), rgb(0 0 0 / 50% ) 1px, rgb(0 0 0 / 75% ) 3px, rgb(0 0 0 / 50% ) 2px );
+        background-repeat:repeat-y;
+        z-index: -1;
+}
+
+@keyframes scroll {
+    0%{background-position:100% 50%}
+    100%{background-position:-33% 50%} /* instead of 0% 50% */
+}
 button{
     background: none;
 	color: inherit;
@@ -17,7 +46,7 @@ button{
 
 .center {
   margin: auto;
-  max-width: 50%;
+  max-width: 50em;
   padding: 10px; 
 
 }
@@ -37,7 +66,6 @@ button{
         margin: auto;
         max-width: 100%;
         padding: 10px; 
-      
     }
     .main-header{
         margin: auto;
@@ -49,13 +77,47 @@ button{
     }
 }
 
+.footertext{
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    margin: 2px;
+}
+
+.footerlinks{
+    margin: auto;
+    max-width: 50em;
+    padding: 0; 
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footerlink{
+
+}
+footer{
+    flex-shrink: 0;
+    margin-top: 3em;
+    width: 100%;
+    background-color: #40213a;
+}
+
+
 a, .btn-link {
     color: #e430e1;
+    text-decoration: none;
+    margin-bottom: 0;
+    border-bottom: 1px dotted;
 }
 a:hover{
     color: rgb(228, 138, 213);
+    text-decoration: none;
+    border-bottom: 1px solid;
 }
 p, li{
+    
     color: white;
 }
 span{
@@ -83,7 +145,8 @@ blockquote {
     margin-top: 10px;
     padding: 10px;
     border-style: solid;
-    border-width: 1px;
+    background-color: #381f33;
+    border-width: 2px;
     border-radius: 4px; 
     border-color: #EE82EE;
 }

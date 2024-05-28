@@ -1,6 +1,7 @@
 ---
 title: Testing
 header: Testing markdown syntax!
+date: 2024-05-01
 ---
 testing out stuff
 

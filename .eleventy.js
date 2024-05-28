@@ -6,6 +6,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/styles.css");
   eleventyConfig.addPassthroughCopy("./src/blog.css");
   eleventyConfig.addPassthroughCopy("./src/code.css");
+  eleventyConfig.addPassthroughCopy("./src/quotes.js");
   eleventyConfig.addPassthroughCopy({"./images/favicon.png": "/favicon.png" });  eleventyConfig.addPlugin(syntaxHighlight);
 
   let options = {
