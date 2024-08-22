@@ -1,0 +1,50 @@
+---
+title: IzzyN's Portfolio
+layout: "layout.njk"
+---
+
+<h1> My Portfolio </h1>
+<a href="/"> Go back </a>
+<hr>
+<style>
+    .testing{
+        background-color: #382735;
+        border: 1px solid #EE82EE !important;
+        border-radius: 1rem;
+        padding: 0.5rem;
+    }
+    .github-project-link:hover{
+        text-decoration: none;
+    }
+    .github-project-link{
+        text-decoration: none;
+    }
+    .github-project-link:hover .github-link-text{
+        text-decoration: underline;
+        color: #f5a2da;
+    }
+    
+</style>
+<div style="margin: 2em; display: grid; column-gap: 2rem; row-gap: 1rem; grid-template-columns: repeat(2, minmax(0, 1fr));">
+
+{% for project in collections.project reversed %}
+<div class="testing" style="position: relative;">
+
+    <div style="height: auto;">
+        <h2 style="position: relative; color: violet; font-weight: bold;">
+            {{ project.data.title }}
+        </h2>
+        <hr>
+        <p style="font-size: 20px; color: #6b676a;">  </p>
+            <a href=" {{ project.data.github }} " style="display:inline-flex" class="github-project-link">Github</a>
+    </div>
+    <br>
+    <img src={{ project.data.image }} style="width:100%; height:auto;">
+    <p style="font-size: 18px">
+        {{ project.data.description }}
+    </p>
+</div>
+
+{% endfor %}
+
+</div>
