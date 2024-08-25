@@ -8,6 +8,11 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/code.css");
   eleventyConfig.addPassthroughCopy("./src/quotes.js");
   eleventyConfig.addPassthroughCopy({"./images/favicon.png": "/favicon.png" });  eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPassthroughCopy({"./images/engine.gif": "/engine.gif" });  eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPassthroughCopy({"./images/hacker.gif": "/hacker.gif" });  eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPassthroughCopy({"./images/catgame.gif": "/catgame.gif" });  eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPassthroughCopy({"./images/Spaceinvaders.gif": "/Spaceinvaders.gif" });  eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPassthroughCopy({"./images/bullethell.gif": "/bullethell.gif" });  eleventyConfig.addPlugin(syntaxHighlight);
 
   let options = {
 		html: true,
