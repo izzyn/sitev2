@@ -236,7 +236,7 @@ hr{
     padding-top: 1.1rem;
 }
 
-h1 {
+h1,h2,h3,h4 {
   color: #EE82EE;
 }
 h1:focus {
