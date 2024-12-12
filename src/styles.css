@@ -116,6 +116,15 @@ a:hover{
     text-decoration: none;
     border-bottom: 1px solid;
 }
+a.friendlink {
+  color: #000;
+  border-bottom: 0px;
+}
+a.friendlink:hover{
+  color: #000;
+  text-decoration: none;
+  border-bottom: 0px, none;
+}
 p, li{
     
     color: white;
