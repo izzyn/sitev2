@@ -1,8 +1,8 @@
 function displayRandomMessage() {
     quotes = [
-        '"Damn, web developers live like this?" -me',
-        '"I\'ll never stop wanting to entirely rework this website" -me',
-        '"If you look at my github page you might get the impression that I have... commitment issues (ahah)\" -me',
+        'Damn, web developers live like this?',
+        'I\'ll never stop wanting to entirely rework this website',
+        'If you look at my github page you might get the impression that I have... commitment issues (ahah)',
     ]
   
     var randomIndex = Math.floor(Math.random() * quotes.length);

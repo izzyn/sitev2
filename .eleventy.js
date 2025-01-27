@@ -8,6 +8,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/code.css");
   eleventyConfig.addPassthroughCopy("./src/quotes.js");
   eleventyConfig.addPassthroughCopy({"./images": "img/"})
+	eleventyConfig.addPlugin(syntaxHighlight);
   let options = {
 		html: true,
 		breaks: true,
